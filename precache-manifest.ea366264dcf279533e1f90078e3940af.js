@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4127ed628677d3629622",
+    "revision": "b27790d08bf144a81ea5",
     "url": "/breatheasy/static/css/main.95750c30.chunk.css"
   },
   {
-    "revision": "4127ed628677d3629622",
-    "url": "/breatheasy/static/js/main.4127ed62.chunk.js"
+    "revision": "b27790d08bf144a81ea5",
+    "url": "/breatheasy/static/js/main.b27790d0.chunk.js"
   },
   {
     "revision": "ee2fa2fc286181834050",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/breatheasy/static/js/runtime~main.64b28c68.js"
   },
   {
-    "revision": "3492fdd012b23a960ba1a77d1822244d",
+    "revision": "b85966302a0048b8acae0b1238eef435",
     "url": "/breatheasy/index.html"
   }
 ];
