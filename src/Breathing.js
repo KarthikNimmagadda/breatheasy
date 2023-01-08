@@ -25,7 +25,7 @@ const Breathing = (props) => {
   return (
     <div>
         <div>
-            <p>{props.text}(<a href={props.url} style={{ color: 'rgb(153, 170, 153)' }}>video reference</a>)</p>
+            <p style={{ color: 'rgb(183, 190, 173)' }}>{props.text}(<a href={props.url} style={{ color: 'rgb(153, 170, 153)' }}>video reference</a>)</p>
             <Button variant="outline-secondary" size="sm" className={animationState === 'running' ? 'btn-youtube-pause' : 'btn-youtube-play'} onClick={() => 
                     {
                         setAnimationState(animationState === 'running' ? 'paused' : 'running');

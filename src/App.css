@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (min-width: 768px) {
-  .App .container button {
-    margin-left: calc(4 * 0.5rem);
-    margin-right: calc(4 * 0.5rem);  }
-}
-
 .App .container {
   display: flex;
   flex-direction: column;
@@ -44,6 +38,8 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   height: calc(1 * 1.5rem);
+  margin-left: calc(1 * 0.5rem);
+  margin-right: calc(1 * 0.5rem);
   background-color: aqua;
 }
 
