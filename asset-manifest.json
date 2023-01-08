@@ -1,7 +1,7 @@
 {
   "main.css": "/breatheasy/static/css/main.95750c30.chunk.css",
-  "main.js": "/breatheasy/static/js/main.359b2100.chunk.js",
-  "main.js.map": "/breatheasy/static/js/main.359b2100.chunk.js.map",
+  "main.js": "/breatheasy/static/js/main.bf9cd520.chunk.js",
+  "main.js.map": "/breatheasy/static/js/main.bf9cd520.chunk.js.map",
   "static/js/1.ee2fa2fc.chunk.js": "/breatheasy/static/js/1.ee2fa2fc.chunk.js",
   "static/js/1.ee2fa2fc.chunk.js.map": "/breatheasy/static/js/1.ee2fa2fc.chunk.js.map",
   "static/js/2.ac17e190.chunk.js": "/breatheasy/static/js/2.ac17e190.chunk.js",
@@ -10,6 +10,6 @@
   "runtime~main.js.map": "/breatheasy/static/js/runtime~main.64b28c68.js.map",
   "static/css/main.95750c30.chunk.css.map": "/breatheasy/static/css/main.95750c30.chunk.css.map",
   "index.html": "/breatheasy/index.html",
-  "precache-manifest.ac86b6a804c60987144e9038ec292a5a.js": "/breatheasy/precache-manifest.ac86b6a804c60987144e9038ec292a5a.js",
+  "precache-manifest.7216b80fe8ee3ba9440d8b9493002e3c.js": "/breatheasy/precache-manifest.7216b80fe8ee3ba9440d8b9493002e3c.js",
   "service-worker.js": "/breatheasy/service-worker.js"
 }
