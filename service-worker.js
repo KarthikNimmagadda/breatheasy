@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/breatheasy/precache-manifest.872df59dda1a43c04befe1c0421312b5.js"
+  "/breatheasy/precache-manifest.98cd1929b7bd103442bfb21a24dfb099.js"
 );
 
 workbox.clientsClaim();
