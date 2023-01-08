@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/breatheasy/static/js/runtime~main.64b28c68.js"
   },
   {
-    "revision": "515e208c4d9c941eef469446d271cfc1",
+    "revision": "3492fdd012b23a960ba1a77d1822244d",
     "url": "/breatheasy/index.html"
   }
 ];
