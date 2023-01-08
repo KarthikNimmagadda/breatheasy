@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-}
+  }
 
 .App-logo {
   height: 40vmin;
@@ -13,9 +13,33 @@
   }
 }
 
+.App .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App .container button {
+  height: calc(2 * 1.5rem);
+  margin-left: calc(4 * 0.5rem);
+  margin-right: calc(4 * 0.5rem);
+  background-color: skyblue;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  background-color: #282c34;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;

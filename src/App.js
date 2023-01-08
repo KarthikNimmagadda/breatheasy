@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import WaterBreathing from './WaterBreathing';
+import WhiskeyBreathing from './WhiskeyBreathing';
+import CoffeeBreathing from './CoffeeBreathing';
+import Header from './Header';
 
 function App() {
+  const [selectedBreathing, setSelectedBreathing] = useState('');
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="container">
+          <Header onBreathingSelected={setSelectedBreathing} />
+        </div>
       </header>
+      <main className="App-content">
+          {selectedBreathing === 'water' && <WaterBreathing />}
+          {selectedBreathing === 'whiskey' && <WhiskeyBreathing />}
+          {selectedBreathing === 'coffee' && <CoffeeBreathing />}
+      </main>
     </div>
   );
 }
