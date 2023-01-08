@@ -1,8 +1,9 @@
-import React, { useRef, useEffect , useState } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
-import './WhiskeyBreathing.css';
+import './Breathing.css';
 
-export default function WhiskeyBreathing() {
+const Breathing = (props) => {
   const [animationState, setAnimationState] = useState('paused');
   const [showSpinner, setShowSpinner] = useState(false);
 
@@ -14,9 +15,8 @@ export default function WhiskeyBreathing() {
         strokeLinecap="round"
         strokeWidth="13"
         d="M6.6 6.6q1 3 5 6 4-3 5-6"
-        className="spinner-animation"
         style={{
-          animation: `spinner-animation 12s infinite ${animationState === 'paused' ? 'paused' : 'running'}`,
+          animation: `${getSpinnerAnimation(props.breathingType)} ${props.animationTime}s infinite ${animationState === 'paused' ? 'paused' : 'running'}`,
         }}
       />
     </svg>
@@ -25,8 +25,7 @@ export default function WhiskeyBreathing() {
   return (
     <div>
         <div>
-            <p>Inhale and Exhale along with the animation, Breathe in and breathe out through your nose. Refer this <a href="https://www.youtube.com/watch?v=pWsXA8jlaWE">video</a></p>
-            <p>Note: This breathing technique will help you with sleep.</p>
+            <p>{props.text}(<a href={props.url} style={{ color: 'rgb(153, 170, 153)' }}>video reference</a>)</p>
             <Button variant="outline-secondary" size="sm" className={animationState === 'running' ? 'btn-youtube-pause' : 'btn-youtube-play'} onClick={() => 
                     {
                         setAnimationState(animationState === 'running' ? 'paused' : 'running');
@@ -40,4 +39,23 @@ export default function WhiskeyBreathing() {
         <div className="spinner" style={{ display: showSpinner ? 'block' : 'none' }}>{spinnerSVG}</div>
     </div>
   );
-}
+};
+
+const getSpinnerAnimation = (breathingType) => {
+    if (breathingType === 'coffee') {
+      return "spinner-animation-coffee";
+    } else if (breathingType === 'whiskey') {
+      return "spinner-animation-whiskey";
+    }
+    return "spinner-animation-water";
+  };
+  
+
+Breathing.propTypes = {
+  animationTime: PropTypes.number,
+  text: PropTypes.string,
+  breathingType: PropTypes.string,
+  url: PropTypes.string,
+};
+
+export default Breathing;
