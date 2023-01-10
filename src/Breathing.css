@@ -1,4 +1,4 @@
-@keyframes spinner-animation-coffee {
+@keyframes coffee {
     0%, to {
         transform-origin: center;
         transform: scale(.2);
@@ -8,7 +8,7 @@
     }
 }
 
-@keyframes spinner-animation-whiskey {
+@keyframes whiskey {
     0%, to {
         transform-origin: center;
         transform: scale(.2);
@@ -18,7 +18,7 @@
     }
 }
 
-@keyframes spinner-animation-water {
+@keyframes water {
     0%, to {
         transform-origin: center;
         transform: scale(.2);

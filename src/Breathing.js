@@ -16,7 +16,7 @@ const Breathing = (props) => {
         strokeWidth="13"
         d="M6.6 6.6q1 3 5 6 4-3 5-6"
         style={{
-          animation: `${getSpinnerAnimation(props.breathingType)} ${props.animationTime}s infinite ${animationState === 'paused' ? 'paused' : 'running'}`,
+          animation: `${props.type} ${props.animationTime}s infinite ${animationState === 'paused' ? 'paused' : 'running'}`,
         }}
       />
     </svg>
@@ -40,17 +40,7 @@ const Breathing = (props) => {
     </div>
   );
 };
-
-const getSpinnerAnimation = (breathingType) => {
-    if (breathingType === 'coffee') {
-      return "spinner-animation-coffee";
-    } else if (breathingType === 'whiskey') {
-      return "spinner-animation-whiskey";
-    }
-    return "spinner-animation-water";
-  };
   
-
 Breathing.propTypes = {
   animationTime: PropTypes.number,
   text: PropTypes.string,
